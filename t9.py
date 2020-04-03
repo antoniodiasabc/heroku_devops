@@ -6,11 +6,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def nao_entre_em_panico():
-
   limite = 100
   qtdPrimos = 2
   numero = 3
-
   primos = "1,2,"
 
   while qtdPrimos < limite:
@@ -25,8 +23,6 @@ def nao_entre_em_panico():
             if(qtdPrimos % 10 ==0):
               primos = primos + " -> " + str(qtdPrimos) + "<br>"
         numero+=1
-##  print (primos)
-
   return primos
 
 if __name__ == "__main__":
