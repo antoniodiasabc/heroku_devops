@@ -22,7 +22,7 @@ def numeros_primos ():
             primos = primos + str(n) + ","
             qtd = qtd + 1
             print (qtd)
-            n+=1
+        n+=1
     return primos
 
 if __name__ == "__main__":
